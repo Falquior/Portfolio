@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Falquior</title>
+</head>
+
+<body>
+    <div class="main-image">
+        <div class="container">
+            <h1><span>Francisco Melo</span></h1>
+            <span class="cen">Portafolio</span>
+            <a class="button" href="https://linktr.ee/falquior" target=”_blank”>Linktree</a>
+        </div>
+    </div>
+    <h1 class="isTitle">Videogames</h1>
+    <div class="videogamecarousel">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://falquior.itch.io/meeting-with-coffee" target=”_blank”><img
+                            src="https://img.itch.zone/aW1nLzEyMjMxMzc0LnBuZw==/315x250%23c/4LOD2D.png" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://falquior.itch.io/recuerdos-de-guerra" target="_blank"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" /></a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <h1 class="isTitle">Pixel Art</h1>
+    <div class="pixelcarousel">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://www.behance.net/gallery/165289915/Autorretrato-en-Pixel-Art" target="_blank"><img
+                            src="https://mir-s3-cdn-cf.behance.net/projects/808/229b0a165289915.Y3JvcCwyODgwLDIyNTIsMCwzMTM.png" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.behance.net/gallery/165535993/MC-Truffle-(Personaje-original-OC)"
+                        target="_blank"><img
+                            src="https://mir-s3-cdn-cf.behance.net/projects/808/4c24e0165535993.Y3JvcCwxNDQwLDExMjYsMCww.png" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.behance.net/gallery/165770431/Miriam-Sprite" target="_blank"><img
+                            src="https://mir-s3-cdn-cf.behance.net/projects/808/738c1b165770431.Y3JvcCwxMjAwLDkzOCwwLDEzMA.png" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.behance.net/gallery/166383903/Espadachina-Oscura-(Personaje-original-OC)"
+                        target="_blank"><img
+                            src="https://mir-s3-cdn-cf.behance.net/projects/808/d116d7166383903.Y3JvcCwxMjAwLDkzOCwwLDEzMA.png" /></a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="presentation">
+        <div></div>
+        <div class="presimage">
+            <img class="myPhoto" src="myPhoto.png">
+        </div>
+        <div class="prestext">
+            <h1>Sobre mi</h1>
+            <h2>Soy un estudiante de Ingeniería Multimedia muy apasionado con el tema de la programación y el
+                desarrollo, una persona siempre dispuesta a aprender y a desarrollar nuevas habilidades, también soy una persona que
+                actualmente esta desarrollando habilidades de diseño y de estética.
+                Mi enfoque es el desarrollo de videojuegos tanto en 2D como en 3D en Unity y en la ilustración/diseño
+                pixel art con Aseprite.</h2>
+        </div>
+        <div></div>
+    </div>
+    <div class="boton">
+        <a class="CV" href="https://linktr.ee/falquior" target=”_blank”>Hoja de vida</a>
+    </div>
+    <div class="final-image"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            autoHeight: true,
+        });
+    </script>
+</body>
+
+</html>
