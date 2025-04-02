@@ -126,15 +126,15 @@ body {
     background-position: center;
     background-size: cover;
     width: 300px; /* Fixed width for carousels */
-    height: 300px; /* Fixed height for carousels */
+    height: 250px; /* Fixed height for carousels */
 }
 
 /* Darken effect only on images */
 .swiper-slide img {
-    filter: brightness(0.5); /* Darken the image */
-    transition: filter 0.3s ease; /* Smooth transition for brightness */
+    object-fit: contain; /* Maintain aspect ratio and fit within the box */
     display: block;
-    width: 100%;
+    width: 300px;
+    height: 250px;
 }
 
 .swiper-slide-active img {
@@ -157,7 +157,7 @@ body {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    margin-top: 120px; /* Keep spacing above the "Sobre mi" section */
+    margin-top: 0; /* Asegúrate de que no haya margen superior adicional */
     text-align: center; /* Center-align text */
 }
 
@@ -230,6 +230,14 @@ body {
     display: block;
     margin-top: 10px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for subtitle */
+}
+
+/* Contenedor de los carruseles */
+.carousel-container {
+    display: flex;
+    flex-direction: column; /* Por defecto, los carruseles estarán uno debajo del otro */
+    gap: 20px; /* Espaciado entre los carruseles */
+    margin-bottom: 20px; /* Reducir el margen inferior para acercar los carruseles a la siguiente sección */
 }
 
 /* Responsive Design */
@@ -358,26 +366,23 @@ body {
     }
 }
 
-@media (min-width: 1560px) {
-    .prestext h2 {
-        max-width: calc(1920px / 3); /* Set width to 1920/3 for screens wider than 1560px */
+/* Carruseles uno al lado del otro para pantallas de 1280px o más */
+@media (min-width: 1080px) {
+    .carousel-container {
+        flex-direction: row; /* Los carruseles estarán uno al lado del otro */
+        justify-content: space-between; /* Espaciado uniforme entre los carruseles */
+        align-items: flex-start; /* Alinear los carruseles en la parte superior */
     }
-}
 
-@media (min-width: 1080px) and (max-width: 1559px) {
-    .prestext h2 {
-        max-width: calc(1920px / 4); /* Set width to 1920/4 for screens wider than 1080px but less than 1560px */
+    .carousel-container .videogamecarousel,
+    .carousel-container .pixelcarousel {
+        flex: 1; /* Los carruseles ocuparán el mismo espacio */
+        max-width: 48%; /* Cada carrusel ocupará aproximadamente la mitad del ancho */
     }
 }
 
 @media (min-width: 658px) {
     .prestext h2 {
-        max-width: calc(1920px / 3); /* Set width to 1920/3 for screens wider than 658px */
-    }
-}
-
-@media (min-width: 678px) {
-    .prestext h2 {
-        max-width: calc(1920px / 3); /* Set width to 1920/3 for screens wider than 678px */
+        max-width: calc(1920px / 1.7); /* Set width to 1920/3 for screens wider than 658px */
     }
 }
