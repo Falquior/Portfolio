@@ -3,7 +3,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Press Start 2P', cursive;
     background: #8b9f5a;
 }
 
@@ -23,20 +23,22 @@ body {
     overflow: hidden;
 }
 
+/* Container adjustments for positioning "Francisco Melo" and elements higher */
 .container {
     position: absolute;
-    top: 1%;
+    top: 40%; /* Adjusted to move the content higher */
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%); /* Keep it centered horizontally */
     text-align: center;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
 }
 
+/* Fixed font size for "Francisco Melo" and "Portfolio" */
 .container h1 {
     margin: 0;
-    font-size: 50px;
+    font-size: 32px; /* Fixed size: Sobre mi (24px) + 8px */
 }
 
 .container h1 span {
@@ -45,6 +47,7 @@ body {
     background: #8b9f5a;
     padding: 6px 14px;
     display: inline-block;
+    font-size: 32px; /* Fixed size: Sobre mi (24px) + 8px */
 }
 
 .cen {
@@ -53,23 +56,33 @@ body {
     font-size: 22px;
 }
 
+/* Section title adjustments */
 .isTitle {
     text-align: center;
     color: #0f380f;
     border-radius: 25px;
+    font-size: 24px;
+    margin: 30px 0 10px 0; /* Reduced bottom margin to bring titles closer to carousels */
 }
 
+/* Button adjustments */
 .button {
+    display: block; /* Ensure the button is below the title box */
+    margin: 20px auto 0 auto; /* Center the button and add spacing above */
     color: black;
-    padding: 10px 24px;
+    padding: 8px 10px; /* Reduced horizontal padding to make it thinner */
+    width: 33%; /* Set the button width to 1/3 of the container */
+    max-width: 200px; /* Optional: Limit the maximum width for smaller screens */
     background: white;
     text-decoration: none;
     border-radius: 12px;
-    transition: .6s;
+    transition: 0.6s;
+    font-size: 16px; /* Slightly larger font size */
+    text-align: center; /* Ensure the text is centered */
 }
 
 .button:hover {
-    opacity: .6;
+    opacity: 0.8; /* Slightly reduced hover effect */
 }
 
 .boton {
@@ -78,6 +91,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     height: 30px;
+    margin-top: 40px; /* Add spacing below the "Sobre mi" paragraph */
 }
 
 .CV {
@@ -94,10 +108,11 @@ body {
     opacity: .6;
 }
 
+/* Swiper container adjustments */
 .swiper {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 200px;
+    padding-top: 10px; /* Reduced top padding to bring carousels closer to titles */
+    padding-bottom: 20px;
 }
 
 .swiper-slide {
@@ -105,7 +120,7 @@ body {
     background-size: cover;
     width: 300px;
     height: 300px;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
+    /* Removed the mirror effect */
 }
 
 .swiper-slide img {
@@ -113,47 +128,88 @@ body {
     width: 100%;
 }
 
+/* Presentation section adjustments */
 .presentation {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 5px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 120px; /* Keep spacing above the "Sobre mi" section */
+    text-align: center; /* Center-align text */
 }
 
-.presimage {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/* Photo adjustments */
 .myPhoto {
-    width: 400px;
+    width: 300px; /* Adjust the size of the photo */
     height: auto;
+    border-radius: 50%; /* Make the photo circular */
+    border: 4px solid #c1bdba; /* Optional: Add a border for styling */
+    margin-bottom: 20px; /* Add spacing below the photo */
 }
 
-.prestext {
-    text-align: center;
-    font-size: 70px;
-}
-
+/* Text under "Sobre mi" */
 .prestext h1 {
-    font-size: 70px;
+    font-size: 28px; /* Keep a consistent size for "Sobre mi" */
+    color: #0f380f;
+    margin-bottom: 10px; /* Add spacing below the title */
 }
 
 .prestext h2 {
-    font-size: 24px;
+    font-size: 16px; /* Keep the text size consistent */
+    color: #333;
+    line-height: 1.5;
+    margin: 0 auto; /* Center the paragraph */
+    text-align: center;
+    max-width: 90%; /* Default width for smaller resolutions */
+}
+
+/* Pixel Art and Videogames carousels */
+.pixelcarousel,
+.videogamecarousel {
+    margin-bottom: 120px; /* Keep spacing below carousels for breathing room */
+}
+
+/* Title box styles */
+.title-box {
+    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    padding: 40px; /* Increased padding to make the box larger */
+    border-radius: 20px; /* Slightly larger rounded corners */
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing below the box for the button */
+}
+
+.title-box h1 {
+    margin: 0;
+    font-size: 48px; /* Increased font size for the name */
+    font-family: 'Press Start 2P', cursive; /* Ensure the font is applied */
+    color: #0f380f; /* Match the color of other titles */
+}
+
+.title-box h1 span {
+    color: #0f380f; /* Match the color of other titles */
+    background: #8b9f5a; /* Inverted to the previous border color */
+    border: 6px solid #c1bdba; /* Inverted to the previous background color */
+    padding: 10px 20px; /* Increased padding for spacing */
+    border-radius: 25px; /* Rounded corners */
+    display: inline-block; /* Ensure proper spacing */
+}
+
+.subtitle {
+    font-size: 20px; /* Slightly larger subtitle */
+    color: #c1bdba;
+    display: block;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for subtitle */
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
     .container h1 {
-        font-size: 40px;
+        font-size: 32px; /* Keep the same size */
     }
 
     .container h1 span {
-        font-size: 20px;
+        font-size: 32px; /* Keep the same size */
     }
 
     .swiper-slide {
@@ -162,11 +218,12 @@ body {
     }
 
     .prestext h1 {
-        font-size: 50px;
+        font-size: 28px; /* Ensure "Sobre mi" title does not get larger */
     }
 
     .prestext h2 {
-        font-size: 20px;
+        font-size: 16px; /* Keep the text size consistent */
+        line-height: 1.5; /* Maintain readability */
     }
 
     .myPhoto {
@@ -176,11 +233,11 @@ body {
 
 @media (max-width: 768px) {
     .container h1 {
-        font-size: 30px;
+        font-size: 32px; /* Keep the same size */
     }
 
     .container h1 span {
-        font-size: 18px;
+        font-size: 32px; /* Keep the same size */
     }
 
     .swiper-slide {
@@ -189,11 +246,12 @@ body {
     }
 
     .prestext h1 {
-        font-size: 40px;
+        font-size: 24px; /* Slightly smaller for smaller screens */
     }
 
     .prestext h2 {
-        font-size: 18px;
+        font-size: 14px; /* Smaller text for smaller screens */
+        line-height: 1.5;
     }
 
     .myPhoto {
@@ -204,15 +262,27 @@ body {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
+    .title-box h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .isTitle {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 480px) {
     .container h1 {
-        font-size: 24px;
+        font-size: 32px; /* Keep the same size */
     }
 
     .container h1 span {
-        font-size: 16px;
+        font-size: 32px; /* Keep the same size */
     }
 
     .swiper-slide {
@@ -221,11 +291,11 @@ body {
     }
 
     .prestext h1 {
-        font-size: 30px;
+        font-size: 20px; /* Smaller size for very small screens */
     }
 
     .prestext h2 {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .myPhoto {
@@ -235,5 +305,41 @@ body {
     .button, .CV {
         font-size: 14px;
         padding: 8px 16px;
+    }
+
+    .title-box h1 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .isTitle {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1560px) {
+    .prestext h2 {
+        max-width: calc(1920px / 3); /* Set width to 1920/3 for screens wider than 1560px */
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1559px) {
+    .prestext h2 {
+        max-width: calc(1920px / 4); /* Set width to 1920/4 for screens wider than 1080px but less than 1560px */
+    }
+}
+
+@media (min-width: 658px) {
+    .prestext h2 {
+        max-width: calc(1920px / 3); /* Set width to 1920/3 for screens wider than 658px */
+    }
+}
+
+@media (min-width: 678px) {
+    .prestext h2 {
+        max-width: calc(1920px / 3); /* Set width to 1920/3 for screens wider than 678px */
     }
 }
