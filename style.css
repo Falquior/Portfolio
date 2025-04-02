@@ -145,3 +145,95 @@ body {
 .prestext h2 {
     font-size: 24px;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container h1 {
+        font-size: 40px;
+    }
+
+    .container h1 span {
+        font-size: 20px;
+    }
+
+    .swiper-slide {
+        width: 250px;
+        height: 250px;
+    }
+
+    .prestext h1 {
+        font-size: 50px;
+    }
+
+    .prestext h2 {
+        font-size: 20px;
+    }
+
+    .myPhoto {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .container h1 span {
+        font-size: 18px;
+    }
+
+    .swiper-slide {
+        width: 200px;
+        height: 200px;
+    }
+
+    .prestext h1 {
+        font-size: 40px;
+    }
+
+    .prestext h2 {
+        font-size: 18px;
+    }
+
+    .myPhoto {
+        width: 250px;
+    }
+
+    .presentation {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .container h1 span {
+        font-size: 16px;
+    }
+
+    .swiper-slide {
+        width: 150px;
+        height: 150px;
+    }
+
+    .prestext h1 {
+        font-size: 30px;
+    }
+
+    .prestext h2 {
+        font-size: 16px;
+    }
+
+    .myPhoto {
+        width: 200px;
+    }
+
+    .button, .CV {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
