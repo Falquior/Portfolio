@@ -61,8 +61,8 @@ body {
     text-align: center;
     color: #0f380f;
     border-radius: 25px;
-    font-size: 24px;
-    margin: 30px 0 10px 0; /* Reduced bottom margin to bring titles closer to carousels */
+    font-size: 24px; /* Fixed size for titles */
+    margin: 30px 0 10px 0; /* Keep spacing consistent */
 }
 
 /* Button adjustments */
@@ -115,17 +115,41 @@ body {
     padding-bottom: 20px;
 }
 
+/* Swiper slide adjustments */
 .swiper-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack image and title vertically */
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for effects */
     background-position: center;
     background-size: cover;
-    width: 300px;
-    height: 300px;
-    /* Removed the mirror effect */
+    width: 300px; /* Fixed width for carousels */
+    height: 300px; /* Fixed height for carousels */
 }
 
+/* Darken effect only on images */
 .swiper-slide img {
+    filter: brightness(0.5); /* Darken the image */
+    transition: filter 0.3s ease; /* Smooth transition for brightness */
     display: block;
     width: 100%;
+}
+
+.swiper-slide-active img {
+    filter: brightness(1); /* Restore brightness for the active slide */
+}
+
+/* Titles remain unaffected */
+.carousel-title {
+    text-align: center;
+    font-size: 14px;
+    color: #333; /* Ensure the title is always visible */
+    margin-top: 10px;
+    font-family: 'Press Start 2P', cursive; /* Match the theme font */
+    background: none; /* Remove any background effect */
+    transition: none; /* No transition effect for titles */
 }
 
 /* Presentation section adjustments */
@@ -143,7 +167,12 @@ body {
     height: auto;
     border-radius: 50%; /* Make the photo circular */
     border: 4px solid #c1bdba; /* Optional: Add a border for styling */
-    margin-bottom: 20px; /* Add spacing below the photo */
+    margin-top: 20px; /* Add spacing above the photo */
+}
+
+/* Adjust spacing under the photo */
+.presimage {
+    margin-bottom: 40px; /* Add more space under the photo */
 }
 
 /* Text under "Sobre mi" */
@@ -153,13 +182,14 @@ body {
     margin-bottom: 10px; /* Add spacing below the title */
 }
 
+/* Default styles for "Sobre mi" */
 .prestext h2 {
-    font-size: 16px; /* Keep the text size consistent */
+    font-size: 20px; /* Fixed size for "Sobre mi" paragraph */
     color: #333;
     line-height: 1.5;
     margin: 0 auto; /* Center the paragraph */
     text-align: center;
-    max-width: 90%; /* Default width for smaller resolutions */
+    max-width: calc(1920px / 3); /* Default width for larger screens */
 }
 
 /* Pixel Art and Videogames carousels */
@@ -231,6 +261,13 @@ body {
     }
 }
 
+@media (max-width: 783px) {
+    .prestext h2 {
+        font-size: 16px; /* Smaller font size for smaller screens */
+        max-width: 90%; /* Adjust width for smaller resolutions */
+    }
+}
+
 @media (max-width: 768px) {
     .container h1 {
         font-size: 32px; /* Keep the same size */
@@ -286,8 +323,8 @@ body {
     }
 
     .swiper-slide {
-        width: 150px;
-        height: 150px;
+        width: 150px; /* Smaller width for carousels */
+        height: 150px; /* Smaller height for carousels */
     }
 
     .prestext h1 {
@@ -295,7 +332,8 @@ body {
     }
 
     .prestext h2 {
-        font-size: 12px;
+        font-size: 12px; /* Even smaller font size for very small screens */
+        max-width: 90%; /* Keep the width consistent */
     }
 
     .myPhoto {
@@ -316,7 +354,7 @@ body {
     }
 
     .isTitle {
-        font-size: 18px;
+        font-size: 20px; /* Slightly smaller font size for titles */
     }
 }
 
