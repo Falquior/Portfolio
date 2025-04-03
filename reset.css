@@ -1,0 +1,33 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: #8b9f5a;
+}
+
+@media (max-width: 1024px) {
+    .presentation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .presimage {
+        max-width: 300px;
+    }
+
+    .presimage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .prestext {
+        align-items: center;
+    }
+
+    .boton {
+        align-self: center;
+    }
+}

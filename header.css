@@ -1,0 +1,51 @@
+.title-box {
+    display: inline-block; /* Agrupa el nombre y "Portafolio" */
+    background: #8b9f5a; /* Cambiado al color verde (#8b9f5a) */
+    padding: 15px 20px; /* Ajustado para mayor equilibrio */
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center; /* Centra el contenido */
+    border: 2px solid rgba(255, 255, 255, 0.8); /* Borde blanco con opacidad */
+}
+
+.container h1 {
+    margin: 0 0 10px 0; /* Reducida la separación inferior */
+    font-size: 32px;
+    color: #fff; /* Texto gris oscuro */
+}
+
+.container h1 span {
+    background: #8b9f5a; /* Fondo verde de la página */
+    border-radius: 25px;
+    padding: 6px 14px;
+    display: inline-block;
+    font-size: 32px;
+    color: #0f380f; /* Texto gris oscuro */
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #333; /* Texto blanco */
+    margin: 5px 0 10px 0; /* Ajustada la separación superior e inferior */
+    text-shadow: none; /* Sin sombreado */
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px; /* Reducida la separación superior */
+    padding: 10px 20px;
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto gris oscuro */
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    border: 2px solid #333; /* Borde gris oscuro */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #333; /* Fondo gris oscuro al pasar el mouse */
+    color: #fff; /* Texto blanco al pasar el mouse */
+}

@@ -155,10 +155,76 @@ body {
 /* Presentation section adjustments */
 .presentation {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    margin-top: 0; /* Asegúrate de que no haya margen superior adicional */
-    text-align: center; /* Center-align text */
+    flex-direction: row; /* Coloca los elementos en fila (imagen a la izquierda, texto a la derecha) */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+    margin-top: 40px; /* Espaciado superior */
+    margin-bottom: 40px; /* Espaciado inferior */
+}
+
+/* Imagen en la sección "Sobre mí" */
+.presimage {
+    flex: 1; /* La imagen ocupará un espacio proporcional */
+    max-width: 40%; /* Limita el ancho máximo de la imagen */
+}
+
+.presimage img {
+    width: 100%; /* La imagen ocupará todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+/* Contenedor del texto en la sección "Sobre mí" */
+.prestext {
+    flex: 2; /* El texto ocupará más espacio que la imagen */
+    display: flex;
+    flex-direction: column; /* Apila el título, el texto y el botón verticalmente */
+    gap: 20px; /* Espaciado entre los elementos */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Botón en la sección "Sobre mí" */
+.boton {
+    align-self: flex-start; /* Alinea el botón al inicio del contenedor */
+    margin-top: 20px; /* Espaciado superior opcional */
+}
+
+.boton a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0f380f; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.boton a:hover {
+    background-color: #8b9f5a; /* Color de fondo al pasar el mouse */
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .presentation {
+        flex-direction: column; /* Cambia a diseño vertical en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+        text-align: center; /* Centra el texto */
+    }
+
+    .presimage {
+        max-width: 100%; /* La imagen ocupará todo el ancho disponible */
+    }
+
+    .prestext {
+        align-items: center; /* Centra el contenido del texto */
+    }
+
+    .boton {
+        align-self: center; /* Centra el botón */
+    }
 }
 
 /* Photo adjustments */

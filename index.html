@@ -1,159 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es"> <!-- Cambié el idioma a español para SEO local si es relevante -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Francisco Melo, estudiante de Ingeniería Multimedia especializado en desarrollo de videojuegos y diseño pixel art.">
+    <meta name="keywords" content="Francisco Melo, portafolio, desarrollo de videojuegos, pixel art, Unity, Aseprite, Ingeniería Multimedia">
+    <meta name="author" content="Francisco Melo">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Falquior</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Francisco Melo - Portafolio</title>
 </head>
 
 <body>
-    <div class="main-image">
-        <div class="container">
-            <div class="title-box">
-                <h1><span>Francisco Melo</span></h1>
-                <span class="subtitle">Portafolio</span>
-            </div>
-            <a class="button" href="https://linktr.ee/falquior" target="_blank">Linktree</a>
-        </div>
-    </div>
-    <div class="carousel-container">
-        
-        <div class="videogamecarousel">
-            <h1 class="isTitle">Videojuegos</h1> <!-- Título para la sección de videojuegos -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="https://falquior.itch.io/meeting-with-coffee" target="_blank">
-                            <img src="https://img.itch.zone/aW1nLzEyMjMxMzc0LnBuZw==/315x250%23c/4LOD2D.png" />
-                        </a>
-                        <p class="carousel-title">Meeting with Coffee</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://falquior.itch.io/recuerdos-de-guerra" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" />
-                        </a>
-                        <p class="carousel-title">Recuerdos de Guerra</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://example.com" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" />
-                        </a>
-                        <p class="carousel-title">Game 3</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://example.com" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" />
-                        </a>
-                        <p class="carousel-title">Game 4</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://example.com" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" />
-                        </a>
-                        <p class="carousel-title">Game 5</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://example.com" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" />
-                        </a>
-                        <p class="carousel-title">Game 6</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://example.com" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" />
-                        </a>
-                        <p class="carousel-title">Game 7</p>
-                    </div>
+    <!-- Encabezado principal -->
+    <header>
+        <div class="main-image">
+            <div class="container">
+                <div class="title-box">
+                    <h1><span>Francisco Melo</span></h1> <!-- H1 principal para SEO -->
+                    <p class="subtitle">Portafolio</p> <!-- Subtítulo descriptivo -->
+                    <a class="button" href="https://linktr.ee/falquior" target="_blank" rel="noopener noreferrer">Linktree</a>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
+    </header>
 
-
-        <div class="pixelcarousel">
-            <h1 class="isTitle">Pixel Art</h1> <!-- Título para la sección de Pixel Art -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="https://www.behance.net/gallery/165289915/Autorretrato-en-Pixel-Art" target="_blank">
-                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/229b0a165289915.Y3JvcCwyODgwLDIyNTIsMCwzMTM.png" />
-                        </a>
-                        <p class="carousel-title">Autorretrato</p>
+    <!-- Sección de carruseles -->
+    <main>
+        <section class="carousel-container">
+            <article class="videogamecarousel">
+                <h2 class="isTitle">Videojuegos</h2> <!-- H2 para la sección de videojuegos -->
+                <p>Explora mis proyectos de videojuegos desarrollados en Unity, tanto en 2D como en 3D.</p> <!-- Descripción para SEO -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://falquior.itch.io/meeting-with-coffee" target="_blank" rel="noopener noreferrer">
+                                <img src="https://img.itch.zone/aW1nLzEyMjMxMzc0LnBuZw==/315x250%23c/4LOD2D.png" alt="Meeting with Coffee - Videojuego">
+                            </a>
+                            <p class="carousel-title">Meeting with Coffee</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://falquior.itch.io/recuerdos-de-guerra" target="_blank" rel="noopener noreferrer">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" alt="Recuerdos de Guerra - Videojuego">
+                            </a>
+                            <p class="carousel-title">Recuerdos de Guerra</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" alt="Game 3 - Próximamente">
+                            </a>
+                            <p class="carousel-title">Game 3</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" alt="Game 4 - Próximamente">
+                            </a>
+                            <p class="carousel-title">Game 4</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" alt="Game 5 - Próximamente">
+                            </a>
+                            <p class="carousel-title">Game 5</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" alt="Game 6 - Próximamente">
+                            </a>
+                            <p class="carousel-title">Game 6</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" alt="Game 7 - Próximamente">
+                            </a>
+                            <p class="carousel-title">Game 7</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://www.behance.net/gallery/165535993/MC-Truffle-(Personaje-original-OC)" target="_blank">
-                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/4c24e0165535993.Y3JvcCwxNDQwLDExMjYsMCww.png" />
-                        </a>
-                        <p class="carousel-title">MC Truffle</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://www.behance.net/gallery/165770431/Miriam-Sprite" target="_blank">
-                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/738c1b165770431.Y3JvcCwxMjAwLDkzOCwwLDEzMA.png" />
-                        </a>
-                        <p class="carousel-title">Miriam Sprite</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://www.behance.net/gallery/166383903/Espadachina-Oscura-(Personaje-original-OC)" target="_blank">
-                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/d116d7166383903.Y3JvcCwxMjAwLDkzOCwwLDEzMA.png" />
-                        </a>
-                        <p class="carousel-title">Espadachina Oscura</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://example.com" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" />
-                        </a>
-                        <p class="carousel-title">Pixel Art 5</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://example.com" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" />
-                        </a>
-                        <p class="carousel-title">Pixel Art 6</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://example.com" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" />
-                        </a>
-                        <p class="carousel-title">Pixel Art 7</p>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
+            </article>
+        </section>
+        <section class="carousel-container">
+            <article class="pixelcarousel">
+                <h2 class="isTitle">Pixel Art</h2> <!-- H2 para la sección de Pixel Art -->
+                <p>Descubre mis ilustraciones y diseños en pixel art creados con Aseprite.</p> <!-- Descripción para SEO -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://www.behance.net/gallery/165289915/Autorretrato-en-Pixel-Art" target="_blank" rel="noopener noreferrer">
+                                <img src="https://mir-s3-cdn-cf.behance.net/projects/808/229b0a165289915.Y3JvcCwyODgwLDIyNTIsMCwzMTM.png" alt="Autorretrato en Pixel Art">
+                            </a>
+                            <p class="carousel-title">Autorretrato</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.behance.net/gallery/165535993/MC-Truffle-(Personaje-original-OC)" target="_blank" rel="noopener noreferrer">
+                                <img src="https://mir-s3-cdn-cf.behance.net/projects/808/4c24e0165535993.Y3JvcCwxNDQwLDExMjYsMCww.png" alt="MC Truffle - Personaje original en Pixel Art">
+                            </a>
+                            <p class="carousel-title">MC Truffle</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.behance.net/gallery/165770431/Miriam-Sprite" target="_blank" rel="noopener noreferrer">
+                                <img src="https://mir-s3-cdn-cf.behance.net/projects/808/738c1b165770431.Y3JvcCwxMjAwLDkzOCwwLDEzMA.png" alt="Miriam Sprite - Pixel Art">
+                            </a>
+                            <p class="carousel-title">Miriam Sprite</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.behance.net/gallery/166383903/Espadachina-Oscura-(Personaje-original-OC)" target="_blank" rel="noopener noreferrer">
+                                <img src="https://mir-s3-cdn-cf.behance.net/projects/808/d116d7166383903.Y3JvcCwxMjAwLDkzOCwwLDEzMA.png" alt="Espadachina Oscura - Personaje original en Pixel Art">
+                            </a>
+                            <p class="carousel-title">Espadachina Oscura</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" alt="Pixel Art 5 - Próximamente">
+                            </a>
+                            <p class="carousel-title">Pixel Art 5</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" alt="Pixel Art 6 - Próximamente">
+                            </a>
+                            <p class="carousel-title">Pixel Art 6</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Comingsoon.png" alt="Pixel Art 7 - Próximamente">
+                            </a>
+                            <p class="carousel-title">Pixel Art 7</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección "Sobre mí" -->
+        <section class="presentation">
+            <div class="presimage">
+                <img class="myPhoto" src="myPhoto.png" alt="Foto de Francisco Melo">
             </div>
-        </div>
-    </div>
-    <div class="presentation">
-        <div class="prestext">
-            <h1>Sobre mi</h1>
-        </div>
-        <div class="presimage">
-            <img class="myPhoto" src="myPhoto.png" alt="My Photo">
-        </div>
-        <div class="prestext">
-            <h2>Soy un estudiante de Ingeniería Multimedia muy apasionado con el tema de la programación y el
-                desarrollo, una persona siempre dispuesta a aprender y a desarrollar nuevas habilidades, también soy una persona que
-                actualmente esta desarrollando habilidades de diseño y de estética.
-                Mi enfoque es el desarrollo de videojuegos tanto en 2D como en 3D en Unity y en la ilustración/diseño
-                pixel art con Aseprite.</h2>
-        </div>
-    </div>
-    <div class="boton">
-        <a class="CV" href="https://linktr.ee/falquior" target="_blank">Hoja de vida</a>
-    </div>
-    <div class="final-image"></div>
+            <div class="prestext">
+                <h2>Sobre mí</h2> <!-- H2 para la sección "Sobre mí" -->
+                <p>
+                    Soy un estudiante de Ingeniería Multimedia muy apasionado con el tema de la programación y el desarrollo,
+                    una persona siempre dispuesta a aprender y a desarrollar nuevas habilidades. También estoy desarrollando
+                    habilidades de diseño y estética. Mi enfoque es el desarrollo de videojuegos tanto en 2D como en 3D en Unity
+                    y en la ilustración/diseño pixel art con Aseprite.
+                </p>
+                <div class="boton">
+                    <a class="CV" href="https://linktr.ee/falquior" target="_blank" rel="noopener noreferrer">Hoja de vida</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="final-image"></div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
             effect: "coverflow",
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: "auto",
+            initialSlide: 3,
             coverflowEffect: {
                 rotate: 20,
                 stretch: 0,
@@ -165,5 +186,4 @@
         });
     </script>
 </body>
-
 </html>

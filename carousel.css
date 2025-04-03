@@ -1,0 +1,55 @@
+.carousel-container {
+    display: flex;
+    flex-direction: column; /* Carruseles uno debajo del otro */
+    align-items: center; /* Centra los carruseles horizontalmente */
+    gap: 20px; /* Espaciado entre los carruseles */
+    margin-bottom: 40px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.carousel-container h2.isTitle{
+    text-align: center; /* Centra el texto */
+    color: #0f380f; /* Cambiado al color gris oscuro */
+    margin-bottom: 10px; /* Ajusta la separación inferior */
+}
+
+.carousel-container p {
+    text-align: center; /* Centra el texto */
+    color: #333; /* Cambiado al color gris oscuro */
+    margin-bottom: 10px; /* Ajusta la separación inferior */
+}
+
+.swiper {
+    width: 100%; /* El carrusel ocupa todo el ancho del contenedor */
+    max-width: 1200px; /* Limita el ancho máximo del carrusel */
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    width: 100%; /* Ajusta el ancho de cada slide */
+    max-width: 300px; /* Limita el ancho máximo de cada slide */
+    height: 250px;
+}
+
+.swiper-slide img {
+    width: 300px; /* Ancho fijo */
+    height: 250px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen para que ocupe el espacio sin deformarse */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+.carousel-title {
+    text-align: center;
+    font-size: 14px;
+    color: #fff; /* Cambiado al verde oscuro */
+    margin-top: 10px;
+    font-family: 'Press Start 2P', cursive;
+}

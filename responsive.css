@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+    .presentation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .presimage {
+        max-width: 100%;
+    }
+
+    .prestext {
+        align-items: center;
+    }
+
+    .boton {
+        align-self: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .presentation {
+        flex-direction: column; /* Cambia a diseño vertical */
+        align-items: center; /* Centra los elementos */
+        text-align: center; /* Centra el texto */
+    }
+
+    .presimage {
+        max-width: 300px; /* Limita el ancho máximo de la imagen */
+    }
+
+    .presimage img {
+        width: 100%; /* Imagen ocupa todo el ancho disponible dentro de su contenedor */
+        height: auto; /* Mantiene proporción */
+    }
+
+    .prestext {
+        align-items: center; /* Centra el contenido del texto */
+    }
+
+    .boton {
+        align-self: center; /* Centra el botón */
+    }
+}
+
+@media (min-width: 1280px) {
+    .carousel-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .carousel-container .videogamecarousel,
+    .carousel-container .pixelcarousel {
+        flex: 1;
+    }
+}

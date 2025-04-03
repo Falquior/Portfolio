@@ -1,0 +1,7 @@
+.final-image {
+    position: relative;
+    background: url(Footer.png) no-repeat center;
+    background-size: cover;
+    height: 640px;
+    overflow: hidden;
+}

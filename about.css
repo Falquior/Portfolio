@@ -1,0 +1,59 @@
+.presentation {
+    display: flex;
+    flex-direction: row; /* Imagen y texto en fila */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-evenly; /* Distribuye el espacio uniformemente */
+    gap: 20px; /* Espaciado entre imagen y texto */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.presimage {
+    flex: 1; /* Imagen ocupa el mismo espacio que el texto */
+    max-width: 300px; /* Limita el ancho máximo de la imagen */
+    text-align: center; /* Centra la imagen dentro de su contenedor */
+}
+
+.presimage img {
+    width: 100%; /* Imagen ocupa todo el ancho disponible dentro del contenedor */
+    height: auto; /* Mantiene proporción */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.prestext {
+    flex: 2; /* Texto ocupa más espacio que la imagen */
+    display: flex;
+    flex-direction: column; /* Apila título, texto y botón */
+    gap: 10px; /* Ajusta el espaciado entre los elementos dentro del contenedor */
+    text-align: left; /* Alinea texto a la izquierda */
+    max-width: 600px; /* Limita el ancho máximo del texto */
+}
+
+.prestext h2 {
+    color: #0f380f; /* Verde oscuro */
+    margin-bottom: 10px; /* Reducida la separación inferior */
+}
+
+.prestext p {
+    color: #0f380f; /* Verde oscuro */
+    text-align: left;
+    line-height: 1.6;
+}
+
+.boton a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto gris oscuro */
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    border: 2px solid #333; /* Borde gris oscuro */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton a:hover {
+    background-color: #333; /* Fondo gris oscuro al pasar el mouse */
+    color: #fff; /* Texto blanco al pasar el mouse */
+}
