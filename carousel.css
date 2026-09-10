@@ -19,9 +19,16 @@
     margin-bottom: 10px; /* Ajusta la separación inferior */
 }
 
+.videogamecarousel,
+.pixelcarousel {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 1200px; /* Limita el ancho máximo para que se centre */
+}
+
 .swiper {
     width: 100%; /* El carrusel ocupa todo el ancho del contenedor */
     max-width: 1200px; /* Limita el ancho máximo del carrusel */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
     padding-top: 10px;
     padding-bottom: 20px;
 }
