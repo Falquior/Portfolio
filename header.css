@@ -1,10 +1,10 @@
 .title-box {
     display: inline-block; /* Agrupa el nombre y "Portafolio" */
-    background: #8b9f5a; /* Cambiado al color verde (#8b9f5a) */
+    background: #14111c; /* Cambiado al color azul del verde original (#8b9f5a) */
     padding: 15px 20px; /* Ajustado para mayor equilibrio */
     border-radius: 0; /* Esquinas cuadradas */
     text-align: center; /* Centra el contenido */
-    border: 2px solid rgba(255, 255, 255, 0.8); /* Borde blanco con opacidad */
+    border: 2px solid rgba(53, 6, 25, 0.8); /* Borde grisaseo con opacidad */
 }
 
 .container h1 {
@@ -48,4 +48,33 @@
 .button:hover {
     background-color: #333; /* Fondo gris oscuro al pasar el mouse */
     color: #fff; /* Texto blanco al pasar el mouse */
+}
+
+/* =========================================================
+   Modificador exclusivo de la primera caja (nombre + "Portafolio").
+   Cambia solo las variables de abajo para personalizar el fondo
+   y los colores de las letras sin afectar otros h1, h2, etc.
+   ========================================================= */
+.hero-box {
+    --hero-box-bg: rgba(20, 17, 28, 0.9);                      /* Fondo de la caja */
+    --hero-box-border: rgba(68, 67, 60, 0.8); /* Color del borde */
+    --hero-name-bg: #14111c;                     /* Fondo de la pastilla del nombre */
+    --hero-name-color: #8b9f5a;                  /* Color del nombre "Francisco Melo" */
+    --hero-subtitle-color: #626b5a;                 /* Color de "Portafolio" */
+
+    background: var(--hero-box-bg);
+    border-color: var(--hero-box-border);
+}
+
+.hero-box h1,
+.hero-box h1 span {
+    color: var(--hero-name-color);
+}
+
+.hero-box h1 span {
+    background: var(--hero-name-bg);
+}
+
+.hero-box .subtitle {
+    color: var(--hero-subtitle-color);
 }
