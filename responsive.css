@@ -193,3 +193,19 @@ body {
         padding: 8px 14px;
     }
 }
+
+/* =========================================================
+   Teléfonos en vertical: la caja del banner (nombre + Linktree)
+   y la foto de "Sobre mí" se reducen proporcionalmente para
+   dejar aire a los lados. Ajusta el 0.75 / 70% a tu gusto.
+   ========================================================= */
+@media (max-width: 768px) and (orientation: portrait) {
+    .title-box {
+        transform: scale(0.75);
+    }
+
+    .presimage {
+        width: 70%;
+        max-width: 70%;
+    }
+}
