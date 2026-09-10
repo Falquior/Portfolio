@@ -2,7 +2,7 @@
     display: inline-block; /* Agrupa el nombre y "Portafolio" */
     background: #8b9f5a; /* Cambiado al color verde (#8b9f5a) */
     padding: 15px 20px; /* Ajustado para mayor equilibrio */
-    border-radius: 15px; /* Bordes redondeados */
+    border-radius: 0; /* Esquinas cuadradas */
     text-align: center; /* Centra el contenido */
     border: 2px solid rgba(255, 255, 255, 0.8); /* Borde blanco con opacidad */
 }
@@ -15,7 +15,7 @@
 
 .container h1 span {
     background: #8b9f5a; /* Fondo verde de la página */
-    border-radius: 25px;
+    border-radius: 0;
     padding: 6px 14px;
     display: inline-block;
     font-size: 32px;
