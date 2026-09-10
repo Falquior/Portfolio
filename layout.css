@@ -11,7 +11,7 @@
 
 .main-image {
     position: relative;
-    background: url("PageBanner.png?v=4") no-repeat center;
+    background: url("PageBanner.png?v=5") no-repeat center;
     background-size: cover;
     width: 100%;
     aspect-ratio: 1440 / 580;
@@ -21,10 +21,10 @@
 
 .final-image {
     position: relative;
-    background: url(Footer.png) no-repeat center;
+    background: url("Footer.png?v=5") no-repeat center;
     background-size: cover;
     width: 100%;
-    aspect-ratio: 1440 / 640;
+    aspect-ratio: 1440 / 260;
     height: auto;
     overflow: hidden;
 }
